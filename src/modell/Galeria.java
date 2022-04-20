@@ -1,9 +1,10 @@
 package modell;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 
-public class Galeria {
+public class Galeria implements Cloneable{
     
     public ArrayList<KiallitasiTargy> targyak;
 
@@ -12,6 +13,14 @@ public class Galeria {
         
     }
     
+    public ArrayList<KiallitasiTargy> cimRendez() {
+        Collections.sort(targyak, new CimComparator());
+        return (ArrayList<KiallitasiTargy>) targyak.clone();
+    }
+     public ArrayList<KiallitasiTargy> keszitoRendez() {
+        Collections.sort(targyak, new KeszitoComparator());
+        return (ArrayList<KiallitasiTargy>) targyak.clone();
+    }
     
     
     
