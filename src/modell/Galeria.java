@@ -14,6 +14,7 @@ public class Galeria {
     
     
     
+    
     public void felvesz(KiallitasiTargy tr) {
         targyak.add(tr);
     }
@@ -27,8 +28,6 @@ public class Galeria {
         return "Galeria{" + "targyak=" + targyak;
     }
 
-    
-    
     
 
    

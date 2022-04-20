@@ -49,6 +49,8 @@ public abstract class KiallitasiTargy implements Comparable<KiallitasiTargy>{
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
+   
+
     
     
     
